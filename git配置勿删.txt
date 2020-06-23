@@ -1,0 +1,16 @@
+//生成私钥
+ssh-keygen -t rsa -b 2048 -C "2359245812@qq.com"
+
+//连接本地仓库到github步骤
+正确步骤：
+1. git init //初始化仓库
+2. 创建readme.md
+3. git add readme.md //添加文件到本地仓库
+
+4. git commit -m "first commit" //添加文件描述信息
+
+5. git remote add origin + 远程仓库地址 //链接远程仓库，创建主分支
+
+6. git pull origin master // 把本地仓库的变化连接到远程仓库主分支
+
+7. git push -u origin master //把本地仓库的文件推送到远程仓库
