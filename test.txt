@@ -1,2 +1,3 @@
 this is a new text
-
+the second change
+master changed it
