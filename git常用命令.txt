@@ -14,3 +14,12 @@ ssh-keygen -t rsa -b 2048 -C "2359245812@qq.com"
 6. git pull origin master // 把本地仓库的变化连接到远程仓库主分支
 
 7. git push -u origin master //把本地仓库的文件推送到远程仓库
+
+8. git 存储密码
+git config --global credential.helper cache
+自己定义时间（一小时后失效）：
+
+git config credential.helper 'cache --timeout=3600'
+永久存储密码：
+
+git config --global credential.helper store
